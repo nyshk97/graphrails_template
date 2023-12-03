@@ -10,11 +10,12 @@ This is a boilerplate for a project using Ruby on Rails and GraphQL.
 
 ## How to set up
 
-```
+```shell:
 $ docker-compose build
 $ docker-compose run app rails new . --force --database=mysql --skip-docker
 $ docker-compose up
-$ docker-compose exec app rails db:create
-$ docker-compose exec rails db:migrate
-$ docker-compose exec rails db:seed_fu
+$ docker-compose exec app sh
+# rails db:create
+# rails db:migrate
+# rails db:seed_fu
 ```
