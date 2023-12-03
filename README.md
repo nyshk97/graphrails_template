@@ -19,6 +19,7 @@ $ docker-compose exec app sh
 # rails db:migrate
 # rails db:seed_fu
 $ open http://localhost:3000
+$ open http://localhost:3000/graphiql
 ```
 
 ## Request sample
