@@ -113,6 +113,9 @@ GEM
       sprockets-rails
     graphql (2.1.6)
       racc (~> 1.4)
+    graphql-batch (0.5.3)
+      graphql (>= 1.12.18, < 3)
+      promise.rb (~> 0.7.2)
     graphql-rails_logger (1.2.4)
       actionpack (> 5.0)
       activesupport (> 5.0)
@@ -160,6 +163,7 @@ GEM
       racc (~> 1.4)
     nokogiri (1.15.5-x86_64-linux)
       racc (~> 1.4)
+    promise.rb (0.7.4)
     psych (5.1.1.1)
       stringio
     public_suffix (5.0.4)
@@ -263,6 +267,7 @@ DEPENDENCIES
   dotenv-rails
   graphiql-rails
   graphql
+  graphql-batch
   graphql-rails_logger
   importmap-rails
   jbuilder

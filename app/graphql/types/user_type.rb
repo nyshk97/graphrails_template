@@ -11,5 +11,9 @@ module Types
     # associations
     field :lines, [Types::LineType], null: true
     # field :lines, Types::LineType.connection_type, null: true
+
+    def lines
+      Loaders::AssociationLoader.for(User, :lines).load(object)
+    end
   end
 end
