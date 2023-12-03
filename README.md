@@ -21,10 +21,10 @@ $ docker-compose exec app sh
 $ open http://localhost:3000
 ```
 
-## Sample Query
+## Request sample
 
 ```shell:
-curl -X POST \
+$ curl -X POST \
        -H "Content-Type: application/json" \
        --data '{ "query": "{ users { id name age } }" }' \
        http://localhost:3000/graphql
