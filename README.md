@@ -20,3 +20,14 @@ $ docker-compose exec app sh
 # rails db:seed_fu
 $ open http://localhost:3000
 ```
+
+## Sample Query
+
+```shell:
+curl -X POST \
+       -H "Content-Type: application/json" \
+       --data '{ "query": "{ users { id name age } }" }' \
+       http://localhost:3000/graphql
+
+{"data":{"users":[{"id":"1","name":"Goro Shigeno","age":20},{"id":"2","name":"Joe Gibson","age":41},{"id":"3","name":"Taiga Shimizu","age":18}]}}
+```
