@@ -32,3 +32,4 @@ $ curl -X POST \
 
 {"data":{"users":[{"id":"1","name":"Goro Shigeno","age":20},{"id":"2","name":"Joe Gibson","age":41},{"id":"3","name":"Taiga Shimizu","age":18}]}}
 ```
+<img width="1710" alt="CleanShot 2023-12-03 at 22 08 39@2x" src="https://github.com/nyshk97/graphrails_template/assets/38527299/b89abe03-0ac9-4136-8875-ddf131af41c7">
