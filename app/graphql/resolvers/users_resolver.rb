@@ -3,8 +3,14 @@ module Resolvers
 
     type [Types::UserType], null: false
 
-    def resolve
-      ::User.all
+    argument :id, ID, required: false
+
+    def resolve(id: nil)
+      if id
+        ::User.where(id: id)
+      else
+        ::User.all
+      end
     end
   end
 end
