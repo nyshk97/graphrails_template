@@ -2,7 +2,8 @@ source "https://rubygems.org"
 
 ruby "3.2.2"
 
-gem 'dotenv-rails'
+gem 'dotenv-rails', group: :development
+gem 'graphql-rails_logger', group: :development
 gem 'seed-fu'
 gem 'graphql'
 
