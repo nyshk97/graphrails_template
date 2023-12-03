@@ -18,4 +18,5 @@ $ docker-compose exec app sh
 # rails db:create
 # rails db:migrate
 # rails db:seed_fu
+$ open http://localhost:3000
 ```
