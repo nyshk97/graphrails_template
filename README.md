@@ -7,10 +7,23 @@ This is a boilerplate for a project using Ruby on Rails and GraphQL.
 - Ruby: `3.2.2`
 - Rails: `7.1.2`
 - MySQL: `8.2.0`
+- graphql-ruby: `2.1.6`
+
+## Includes
+- Settings for Docker to build a development environment
+- `User` and `Line` models
+  - and its seed data
+- Basic GraphQL configuration
+  - Install `graphql-ruby`
+  - Created `users_resolver`, `user_type`, `line_type`
+- DataLoader settings to avoid N+1 queries
+  - with `graphql-batch`
+- Several gems to improve development efficiency
+  - `graphiql`、`graphql-rails_logger`、`dotenv-rails`
 
 ## How to set up
 
-```shell:
+```
 $ docker-compose build
 $ docker-compose run app rails new . --force --database=mysql --skip-docker
 $ docker-compose up
@@ -22,9 +35,9 @@ $ open http://localhost:3000
 $ open http://localhost:3000/graphiql
 ```
 
-## Request sample
+## Request examples
 
-```shell:
+```shell
 $ curl -X POST \
        -H "Content-Type: application/json" \
        --data '{ "query": "{ users { id name age } }" }' \
