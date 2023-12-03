@@ -1,15 +1,11 @@
 # frozen_string_literal: true
 
 module Types
-  class UserType < Types::BaseObject
+  class LineType < Types::BaseObject
     field :id, ID, null: false
-    field :name, String
-    field :age, Integer
+    field :content, String
+    field :user_id, Integer, null: false
     field :created_at, GraphQL::Types::ISO8601DateTime, null: false
     field :updated_at, GraphQL::Types::ISO8601DateTime, null: false
-
-    # associations
-    field :lines, [Types::LineType], null: true
-    # field :lines, Types::LineType.connection_type, null: true
   end
 end
