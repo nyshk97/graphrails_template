@@ -25,7 +25,6 @@ This is a boilerplate for a project using Ruby on Rails and GraphQL.
 
 ```
 $ docker-compose build
-$ docker-compose run app rails new . --force --database=mysql --skip-docker
 $ docker-compose up
 $ docker-compose exec app sh
 # rails db:create
